@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj.d"
   "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj"
   "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj.d"
+  "CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj"
+  "CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj.d"
   "CustomerManagementSystem.exe"
   "CustomerManagementSystem.exe.manifest"
   "CustomerManagementSystem.pdb"

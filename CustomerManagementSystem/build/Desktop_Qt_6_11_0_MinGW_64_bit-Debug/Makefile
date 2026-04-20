@@ -56,10 +56,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\QTcutie\CustomerManagementSystem
+CMAKE_SOURCE_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -271,6 +271,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+shopwidget.obj: shopwidget.cpp.obj
+.PHONY : shopwidget.obj
+
+# target to build an object file
+shopwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj
+.PHONY : shopwidget.cpp.obj
+
+shopwidget.i: shopwidget.cpp.i
+.PHONY : shopwidget.i
+
+# target to preprocess a source file
+shopwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.i
+.PHONY : shopwidget.cpp.i
+
+shopwidget.s: shopwidget.cpp.s
+.PHONY : shopwidget.s
+
+# target to generate assembly for a file
+shopwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.s
+.PHONY : shopwidget.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -295,6 +319,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... shopwidget.obj
+	@echo ... shopwidget.i
+	@echo ... shopwidget.s
 .PHONY : help
 
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/QTcutie/CustomerManagementSystem
+# Install script for directory: C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CustomerManagementSystem.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CustomerManagementSystem.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -62,6 +62,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

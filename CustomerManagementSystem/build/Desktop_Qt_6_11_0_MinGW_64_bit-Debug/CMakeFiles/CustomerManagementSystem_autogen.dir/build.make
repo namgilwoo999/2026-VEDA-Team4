@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\QTcutie\CustomerManagementSystem
+CMAKE_SOURCE_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Utility rule file for CustomerManagementSystem_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/CustomerManagementSystem_autogen: CustomerManagementSystem_autogen/ti
 CustomerManagementSystem_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 CustomerManagementSystem_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/uic.exe
 CustomerManagementSystem_autogen/timestamp: CMakeFiles/CustomerManagementSystem_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target CustomerManagementSystem"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/CustomerManagementSystem_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target CustomerManagementSystem"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/CustomerManagementSystem_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/timestamp
 
 CustomerManagementSystem_autogen: CMakeFiles/CustomerManagementSystem_autogen
 CustomerManagementSystem_autogen: CustomerManagementSystem_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/CustomerManagementSystem_autogen.dir/clean:
 .PHONY : CMakeFiles/CustomerManagementSystem_autogen.dir/clean
 
 CMakeFiles/CustomerManagementSystem_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CustomerManagementSystem_autogen.dir/depend
 

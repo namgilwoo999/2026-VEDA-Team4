@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShopWidget</class>
+ <widget class="QWidget" name="ShopWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="MainLayout">
+     <item>
+      <layout class="QHBoxLayout" name="SearchProfileLayout">
+       <item>
+        <widget class="QLineEdit" name="SearchBar">
+         <property name="placeholderText">
+          <string>검색어를 입력해 주세요</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="ProfileButton">
+         <property name="text">
+          <string>프로필</string>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::ToolButtonPopupMode::MenuButtonPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="CategoryItemLayout" stretch="0,10">
+       <item>
+        <widget class="QListWidget" name="CategoryList">
+         <item>
+          <property name="text">
+           <string>카테고리</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="ItemArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>391</width>
+            <height>452</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

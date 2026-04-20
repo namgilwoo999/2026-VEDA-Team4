@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\QTcutie\CustomerManagementSystem
+CMAKE_SOURCE_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Utility rule file for CustomerManagementSystem_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/CustomerManagementSystem_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/CustomerManagementSystem_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/CustomerManagementSystem_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CustomerManagementSystem_autogen_timestamp_deps.dir/depend
 
