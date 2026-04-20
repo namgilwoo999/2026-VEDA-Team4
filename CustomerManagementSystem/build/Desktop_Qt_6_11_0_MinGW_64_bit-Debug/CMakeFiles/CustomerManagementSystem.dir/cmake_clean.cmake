@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CustomerManagementSystem_autogen"
   "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/CustomerManagementSystem.dir/item.cpp.obj"
+  "CMakeFiles/CustomerManagementSystem.dir/item.cpp.obj.d"
   "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj"
   "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj.d"
   "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj"

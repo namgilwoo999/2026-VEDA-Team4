@@ -223,6 +223,30 @@ CustomerManagementSystem_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.s
 .PHONY : CustomerManagementSystem_autogen/mocs_compilation.cpp.s
 
+item.obj: item.cpp.obj
+.PHONY : item.obj
+
+# target to build an object file
+item.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/item.cpp.obj
+.PHONY : item.cpp.obj
+
+item.i: item.cpp.i
+.PHONY : item.i
+
+# target to preprocess a source file
+item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/item.cpp.i
+.PHONY : item.cpp.i
+
+item.s: item.cpp.s
+.PHONY : item.s
+
+# target to generate assembly for a file
+item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/item.cpp.s
+.PHONY : item.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -313,6 +337,9 @@ help:
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.obj
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.i
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.s
+	@echo ... item.obj
+	@echo ... item.i
+	@echo ... item.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

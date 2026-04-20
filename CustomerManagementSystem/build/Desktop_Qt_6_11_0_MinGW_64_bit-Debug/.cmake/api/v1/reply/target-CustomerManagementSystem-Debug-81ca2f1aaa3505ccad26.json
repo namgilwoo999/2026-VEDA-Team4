@@ -78,13 +78,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 67,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -402,7 +402,8 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				9
 			]
 		}
 	],
@@ -526,7 +527,8 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				9
 			]
 		},
 		{
@@ -536,7 +538,8 @@
 				3,
 				6,
 				8,
-				9
+				10,
+				11
 			]
 		},
 		{
@@ -551,14 +554,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				10
+				12
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				11
+				13
 			]
 		}
 	],
@@ -608,6 +611,17 @@
 			"backtrace" : 4,
 			"path" : "shopwidget.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "item.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "item.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
