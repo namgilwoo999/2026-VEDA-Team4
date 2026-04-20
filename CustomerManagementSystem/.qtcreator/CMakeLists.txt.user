@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 19.0.0, 2026-04-20T15:37:16. -->
+<!-- Written by QtCreator 19.0.0, 2026-04-20T19:02:01. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{f1392dd1-8fae-4115-8510-0a07949e2c4f}</value>
+  <value type="QByteArray">{af29e789-bae3-4324-9a4e-b8c6dfa4908b}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -183,6 +183,7 @@
        <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
        <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
        <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
        <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ApplicationManagerPlugin.Deploy.CMakePackageStep</value>
       </valuemap>
       <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
@@ -259,6 +260,7 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ApplicationManagerPlugin.Deploy.CMakePackageStep</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
