@@ -17,12 +17,17 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
+        shopwidget.cpp
+        shopwidget.h
+        shopwidget.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(CustomerManagementSystem
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        shopwidget.h shopwidget.cpp shopwidget.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET CustomerManagementSystem APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CustomerManagementSystem_autogen"
   "CustomerManagementSystem_autogen/include/ui_mainwindow.h"
+  "CustomerManagementSystem_autogen/include/ui_shopwidget.h"
   "CustomerManagementSystem_autogen/mocs_compilation.cpp"
   "CustomerManagementSystem_autogen/timestamp"
 )

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-f5ee772a80553e1b3f9a.json",
+					"jsonFile" : "directory-.-Debug-c9b06dae3cfa8baca85d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CustomerManagementSystem::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CustomerManagementSystem-Debug-489658971e3cefb5c172.json",
+					"jsonFile" : "target-CustomerManagementSystem-Debug-da214d065cbcc2896e0d.json",
 					"name" : "CustomerManagementSystem",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
-		"source" : "C:/QTcutie/CustomerManagementSystem"
+		"build" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem"
 	},
 	"version" : 
 	{

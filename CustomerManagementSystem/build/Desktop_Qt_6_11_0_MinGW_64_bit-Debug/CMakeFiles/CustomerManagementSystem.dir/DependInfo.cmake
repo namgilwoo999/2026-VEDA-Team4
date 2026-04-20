@@ -9,9 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "CustomerManagementSystem_autogen/timestamp" "custom" "CustomerManagementSystem_autogen/deps"
-  "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/mocs_compilation.cpp" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj.d"
-  "C:/QTcutie/CustomerManagementSystem/main.cpp" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj.d"
-  "C:/QTcutie/CustomerManagementSystem/mainwindow.cpp" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj.d"
+  "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/mocs_compilation.cpp" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/main.cpp" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj.d"
+  "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/mainwindow.cpp" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj.d"
+  "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/shopwidget.cpp" "CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

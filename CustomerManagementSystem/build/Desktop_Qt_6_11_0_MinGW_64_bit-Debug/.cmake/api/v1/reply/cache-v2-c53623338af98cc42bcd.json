@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug"
+			"value" : "c:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/QTcutie/CustomerManagementSystem"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1527,7 +1527,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CustomerManagementSystem_IS_TOP_LEVEL",
@@ -1551,7 +1551,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/QTcutie/CustomerManagementSystem"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1587,7 +1587,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper"
+			"value" : "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",

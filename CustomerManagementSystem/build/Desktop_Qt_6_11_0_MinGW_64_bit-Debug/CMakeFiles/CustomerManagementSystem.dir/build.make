@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\QTcutie\CustomerManagementSystem
+CMAKE_SOURCE_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CustomerManagementSystem.dir/depend.make
@@ -71,60 +71,76 @@ include CMakeFiles/CustomerManagementSystem.dir/flags.make
 CustomerManagementSystem_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 CustomerManagementSystem_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/uic.exe
 CustomerManagementSystem_autogen/timestamp: CMakeFiles/CustomerManagementSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target CustomerManagementSystem"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/CustomerManagementSystem_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/QTcutie/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target CustomerManagementSystem"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/CustomerManagementSystem_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/timestamp
 
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/flags.make
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/includes_CXX.rsp
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj: CustomerManagementSystem_autogen/mocs_compilation.cpp
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.obj -c C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.obj -c C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp
 
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp > CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp > CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp -o CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CustomerManagementSystem_autogen\mocs_compilation.cpp -o CMakeFiles\CustomerManagementSystem.dir\CustomerManagementSystem_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/flags.make
 CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/includes_CXX.rsp
-CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj: C:/QTcutie/CustomerManagementSystem/main.cpp
+CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj: C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/main.cpp
 CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\main.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\main.cpp.obj -c C:\QTcutie\CustomerManagementSystem\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\main.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\main.cpp.obj -c C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\main.cpp
 
 CMakeFiles/CustomerManagementSystem.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomerManagementSystem.dir/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\QTcutie\CustomerManagementSystem\main.cpp > CMakeFiles\CustomerManagementSystem.dir\main.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\main.cpp > CMakeFiles\CustomerManagementSystem.dir\main.cpp.i
 
 CMakeFiles/CustomerManagementSystem.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomerManagementSystem.dir/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\QTcutie\CustomerManagementSystem\main.cpp -o CMakeFiles\CustomerManagementSystem.dir\main.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\main.cpp -o CMakeFiles\CustomerManagementSystem.dir\main.cpp.s
 
 CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/flags.make
 CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/includes_CXX.rsp
-CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj: C:/QTcutie/CustomerManagementSystem/mainwindow.cpp
+CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj: C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/mainwindow.cpp
 CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.obj -c C:\QTcutie\CustomerManagementSystem\mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.obj -c C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\mainwindow.cpp
 
 CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\QTcutie\CustomerManagementSystem\mainwindow.cpp > CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\mainwindow.cpp > CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.i
 
 CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\QTcutie\CustomerManagementSystem\mainwindow.cpp -o CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\mainwindow.cpp -o CMakeFiles\CustomerManagementSystem.dir\mainwindow.cpp.s
+
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/flags.make
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/includes_CXX.rsp
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj: C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/shopwidget.cpp
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj: CMakeFiles/CustomerManagementSystem.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj -MF CMakeFiles\CustomerManagementSystem.dir\shopwidget.cpp.obj.d -o CMakeFiles\CustomerManagementSystem.dir\shopwidget.cpp.obj -c C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\shopwidget.cpp
+
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\shopwidget.cpp > CMakeFiles\CustomerManagementSystem.dir\shopwidget.cpp.i
+
+CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\shopwidget.cpp -o CMakeFiles\CustomerManagementSystem.dir\shopwidget.cpp.s
 
 # Object files for target CustomerManagementSystem
 CustomerManagementSystem_OBJECTS = \
 "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj" \
-"CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj"
+"CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj" \
+"CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj"
 
 # External object files for target CustomerManagementSystem
 CustomerManagementSystem_EXTERNAL_OBJECTS =
@@ -132,6 +148,7 @@ CustomerManagementSystem_EXTERNAL_OBJECTS =
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj
+CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/shopwidget.cpp.obj
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/build.make
 CustomerManagementSystem.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 CustomerManagementSystem.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a
@@ -140,7 +157,7 @@ CustomerManagementSystem.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/linkLibs.rsp
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/objects1.rsp
 CustomerManagementSystem.exe: CMakeFiles/CustomerManagementSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CustomerManagementSystem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CustomerManagementSystem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CustomerManagementSystem.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +169,6 @@ CMakeFiles/CustomerManagementSystem.dir/clean:
 .PHONY : CMakeFiles/CustomerManagementSystem.dir/clean
 
 CMakeFiles/CustomerManagementSystem.dir/depend: CustomerManagementSystem_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\QTcutie\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\3-02\Desktop\CustomerManagement\CustomerManagementSystem\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\CustomerManagementSystem.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CustomerManagementSystem.dir/depend
 
