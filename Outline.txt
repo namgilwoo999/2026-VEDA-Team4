@@ -1,0 +1,22 @@
+고객관리(주) + 계좌(부)
+
+고객 - 계좌 연동   자동으로 돈 빠져나가는
+
+카테고리별 선호도 조사 가능
+
+사용 금액로 등급 부여 (VIP, VVIP)
+
+User, Item, Balance Account
+
+
+
+1. 기본 UI 설계
+
+2. 기능구현
+
+3. admin권한으로 account CRUD 가능
+
+
+4. 마지막 UI (시간 되면) 
+
+git version control, coding style documentation
