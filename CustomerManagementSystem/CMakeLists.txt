@@ -31,6 +31,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         item.h item.cpp
         loginwidget.h loginwidget.cpp loginwidget.ui
         signupwidget.h signupwidget.cpp signupwidget.ui
+        user.h user.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET CustomerManagementSystem APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
