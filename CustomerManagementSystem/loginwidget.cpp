@@ -4,17 +4,22 @@
 LoginWidget::LoginWidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::LoginWidget)
+    , m_signup(new SignupWidget())
 {
     ui->setupUi(this);
 
     connect(ui->loginButton,  SIGNAL(clicked()), this, SLOT(OnLoginClicked()));
     connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(OnCancelClicked()));
     connect(ui->signupButton, SIGNAL(clicked()), this, SLOT(OnSignupClicked()));
+
+    connect(m_signup, SIGNAL(CancelRequested()), m_signup, SLOT(hide()));
+    connect(m_signup, SIGNAL(CancelRequested()), this, SLOT(show()));
 }
 
 LoginWidget::~LoginWidget()
 {
     delete ui;
+    delete m_signup;
 }
 
 void LoginWidget::OnLoginClicked()
@@ -29,5 +34,6 @@ void LoginWidget::OnCancelClicked()
 
 void LoginWidget::OnSignupClicked()
 {
-    emit SignupRequested();
+    this->hide();
+    m_signup->show();
 }
