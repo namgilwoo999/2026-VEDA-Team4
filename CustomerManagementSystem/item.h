@@ -4,23 +4,24 @@
 
 class Item {
 private:
-    int Id;
-    QString Name;
-    QString Category;
-    int Price;
+    int id;
+    QString name;
+    QString category;
+    int price;
+
 public:
     Item();
-    Item(int Id, QString Name, QString Category, int Price);
+    Item(int id, QString name, QString category, int price);
 
     int GetId() const;
     QString GetName() const;
     QString GetCategory() const;
     int GetPrice() const;
 
-    void SetId(int Id);
-    void SetName(QString Name);
-    void SetCategory(QString Category);
-    void SetPrice(int Price);
+    void SetId(int id);
+    void SetName(QString name);
+    void SetCategory(QString category);
+    void SetPrice(int price);
 };
 
 #endif // ITEM_H

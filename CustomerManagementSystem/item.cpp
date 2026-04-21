@@ -3,39 +3,39 @@
 Item::Item() {
 }
 
-Item::Item(int Id, QString Name, QString Category, int Price) {
-    this->Id = Id;
-    this->Name = Name;
-    this->Category = Category;
-    this->Price = Price;
+Item::Item(int id, QString name, QString category, int price) {
+    this->id = id;
+    this->name = name;
+    this->category = category;
+    this->price = price;
 }
 
 int Item::GetId() const {
-    return this->Id;
+    return this->id;
 }
 QString Item::GetName() const {
-    return this->Name;
+    return this->name;
 };
 QString Item::GetCategory() const {
-    return this->Category;
+    return this->category;
 }
 int Item::GetPrice() const {
-    return this->Price;
+    return this->price;
 }
 
-void Item::SetId(int Id) {
-    this->Id = Id;
+void Item::SetId(int id) {
+    this->id = id;
 }
 
-void Item::SetName(QString Name) {
-    this->Name = Name;
+void Item::SetName(QString name) {
+    this->name = name;
 }
 
-void Item::SetCategory(QString Category) {
-    this->Category = Category;
+void Item::SetCategory(QString category) {
+    this->category = category;
 }
 
-void Item::SetPrice(int Price) {
-    this->Price = Price;
+void Item::SetPrice(int price) {
+    this->price = price;
 }
 
