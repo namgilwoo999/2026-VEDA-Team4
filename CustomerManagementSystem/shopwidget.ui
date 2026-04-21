@@ -10,17 +10,12 @@
     <height>514</height>
    </rect>
   </property>
-
   <property name="windowTitle">
    <string>Form</string>
   </property>
-
   <layout class="QVBoxLayout" name="verticalLayout_2">
-
-   <!-- TOP: search + profile -->
    <item>
-    <layout class="QHBoxLayout" name="SearchProfileLayout" stretch="0,5">
-
+    <layout class="QHBoxLayout" name="SearchProfileLayout" stretch="0,0,0,0,5">
      <item>
       <widget class="QLineEdit" name="SearchBar">
        <property name="placeholderText">
@@ -28,7 +23,27 @@
        </property>
       </widget>
      </item>
-
+     <item>
+      <widget class="QToolButton" name="AddButton">
+       <property name="text">
+        <string>제품 추가</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="DeleteButton">
+       <property name="text">
+        <string>제품 삭제</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="modifyButton">
+       <property name="text">
+        <string>제품 수정</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QToolButton" name="ProfileButton">
        <property name="text">
@@ -42,49 +57,104 @@
        </property>
       </widget>
      </item>
-
     </layout>
    </item>
-
-   <!-- BODY: category + items -->
    <item>
     <layout class="QHBoxLayout" name="CategoryItemLayout" stretch="0,10">
-
      <item>
       <widget class="QListWidget" name="CategoryList">
        <item>
         <property name="text">
-         <string>카테고리</string>
+         <string>전체</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>식품</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>패션</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>전자제품</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>주방용품</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
         </property>
        </item>
       </widget>
      </item>
-
      <item>
       <widget class="QScrollArea" name="ItemArea">
        <property name="widgetResizable">
         <bool>true</bool>
        </property>
-
-       <widget class="QWidget" name="scrollAreaWidgetContents">
+       <widget class="QWidget" name="ItemCardLayout">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>500</width>
-          <height>450</height>
+          <width>495</width>
+          <height>455</height>
          </rect>
         </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="ItemCardList"/>
+         </item>
+        </layout>
        </widget>
-
       </widget>
      </item>
-
     </layout>
    </item>
-
   </layout>
-
  </widget>
  <resources/>
  <connections/>

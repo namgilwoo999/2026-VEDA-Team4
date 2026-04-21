@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ItemModifyDialog</class>
+ <widget class="QDialog" name="ItemModifyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout" rowstretch="10,0,0,0">
+     <item row="3" column="0">
+      <widget class="QLabel" name="Quantity">
+       <property name="text">
+        <string>수량</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="Name">
+       <property name="text">
+        <string>이름</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Category">
+       <property name="text">
+        <string>카테고리</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="Price">
+       <property name="text">
+        <string>가격</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="NameEdit"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="PriceEdit"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="QuantityEdit"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="CategoryBox">
+       <item>
+        <property name="text">
+         <string>식품</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>패션</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>전자제품</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>주방용품</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="Modify">
+       <property name="text">
+        <string>수정</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Cancel">
+       <property name="text">
+        <string>취소</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
