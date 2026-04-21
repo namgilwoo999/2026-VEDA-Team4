@@ -1,22 +1,26 @@
 #include "databasemanager.h"
 
-DatabaseManager::DatabaseManager() {
-}
-void DatabaseManager::Init() {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+DatabaseManager::DatabaseManager() {}
+
+void DatabaseManager::Init()
+{
+    QDir().mkpath("data");
+
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE", "main_connection");
     db.setDatabaseName("data/mydatabase.db");
 
     if (!db.open()) {
-        // 에러 처리
+        qDebug() << "DB Open Error:" << db.lastError().text();
         return;
     }
 
     CreateTables();
 }
-void DatabaseManager::CreateTables() {
-    QSqlQuery query;
 
-    // users
+void DatabaseManager::CreateTables()
+{
+    QSqlQuery query(QSqlDatabase::database("main_connection"));
+
     query.exec(
         "CREATE TABLE IF NOT EXISTS users ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -30,18 +34,17 @@ void DatabaseManager::CreateTables() {
         ")"
         );
 
-    // items
     query.exec(
         "CREATE TABLE IF NOT EXISTS items ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT, "
         "name TEXT NOT NULL, "
         "category TEXT, "
         "price INTEGER, "
-        "image_path TEXT"
+        "image_path TEXT, "
+        "quantity INTEGER"
         ")"
         );
 
-    // orders
     query.exec(
         "CREATE TABLE IF NOT EXISTS orders ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT, "
