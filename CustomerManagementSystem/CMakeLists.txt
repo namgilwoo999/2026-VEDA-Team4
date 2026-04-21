@@ -42,6 +42,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         itemseed.h itemseed.cpp
         itemadddialog.h itemadddialog.cpp itemadddialog.ui
         itemmodifydialog.h itemmodifydialog.cpp itemmodifydialog.ui
+        mypage.cpp mypage.h mypage.ui
     )
 else()
     if(ANDROID)

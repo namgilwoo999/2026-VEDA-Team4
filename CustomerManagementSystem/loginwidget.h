@@ -2,7 +2,6 @@
 #define LOGINWIDGET_H
 
 #include <QWidget>
-#include "signupwidget.h"
 
 namespace Ui {
 class LoginWidget;
@@ -19,15 +18,15 @@ public:
 signals:
     void LoginRequested(const QString &id, const QString &password);
     void CancelRequested();
+    void SignUpRequested();
 
 private slots:
     void OnLoginClicked();
     void OnCancelClicked();
-    void OnSignupClicked();
+    void OnSignUpClicked();
 
 private:
     Ui::LoginWidget *ui;
-    SignupWidget *m_signup;
 };
 
 #endif // LOGINWIDGET_H

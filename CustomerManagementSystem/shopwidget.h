@@ -16,6 +16,7 @@ class ShopWidget : public QWidget
 public:
     explicit ShopWidget(QWidget *parent = nullptr);
     ~ShopWidget();
+    void setUsername(const QString& username);
 
 private slots:
     void onCategorySelected(QListWidgetItem* item);
@@ -23,12 +24,17 @@ private slots:
     void onDeleteItem();
     void onAddItem();
     void onModifyItem();
+    void onProfileButton();
+
+signals:
+    void LogoutRequested();
 
 private:
     void loadCards(const QList<Item>& items);
     Ui::ShopWidget* ui;
     ItemDB db;
     QString currentCategory = "전체";
+    QString m_username;
 };
 
 #endif // SHOPWIDGET_H

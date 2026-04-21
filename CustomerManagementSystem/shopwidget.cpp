@@ -2,6 +2,7 @@
 #include "ui_shopwidget.h"
 #include "itemadddialog.h"
 #include "itemmodifydialog.h"
+#include "mypage.h"
 
 ShopWidget::ShopWidget(QWidget *parent)
     : QWidget(parent)
@@ -14,6 +15,7 @@ ShopWidget::ShopWidget(QWidget *parent)
     connect(ui->DeleteButton, SIGNAL(clicked()), this, SLOT(onDeleteItem()));
     connect(ui->AddButton, SIGNAL(clicked()), this, SLOT(onAddItem()));
     connect(ui->modifyButton, SIGNAL(clicked()), this, SLOT(onModifyItem()));
+    connect(ui->ProfileButton, SIGNAL(clicked()), this, SLOT(onProfileButton()));
 
     loadCards(db.GetAllItems());
 }
@@ -87,9 +89,7 @@ void ShopWidget::onDeleteItem()
 
 void ShopWidget::onAddItem()
 {
-    qDebug() << "onAddItem 호출됨";  // 추가
     ItemAddDialog dlg(this);
-    qDebug() << "dialog 생성됨";    // 추가
     if (dlg.exec() == QDialog::Accepted) {
         db.InsertItem(dlg.getItem());
         loadCards(db.GetItemsByCategory(currentCategory));
@@ -114,4 +114,16 @@ void ShopWidget::onModifyItem()
         db.UpdateItem(updated);
         loadCards(db.GetItemsByCategory(currentCategory));
     }
+}
+
+void ShopWidget::setUsername(const QString& username)
+{
+    m_username = username;
+}
+
+void ShopWidget::onProfileButton()
+{
+    Mypage dlg(m_username, this);
+    connect(&dlg, SIGNAL(AccountDeleted()), this, SIGNAL(LogoutRequested()));
+    dlg.exec();
 }
