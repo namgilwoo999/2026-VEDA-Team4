@@ -10,7 +10,7 @@
 
 void ItemSeed::load(ItemDB& db)
 {
-    const QString path = QCoreApplication::applicationDirPath() + "/items.json";
+    const QString path = ":/items.json";
     QFile file(path);
     if (!file.open(QIODevice::ReadOnly)) {
         qDebug() << "JSON Not Open:" << path;

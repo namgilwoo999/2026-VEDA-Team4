@@ -124,6 +124,7 @@ void ShopWidget::setUsername(const QString& username)
 void ShopWidget::onProfileButton()
 {
     Mypage dlg(m_username, this);
+    connect(&dlg, SIGNAL(LogoutRequested()), this, SIGNAL(LogoutRequested()));
     connect(&dlg, SIGNAL(AccountDeleted()), this, SIGNAL(LogoutRequested()));
     dlg.exec();
 }

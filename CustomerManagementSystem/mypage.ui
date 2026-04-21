@@ -16,9 +16,6 @@
   <layout class="QHBoxLayout" name="mainLayout">
    <item>
     <widget class="QListWidget" name="menuListWidget">
-     <property name="maximumWidth">
-      <number>150</number>
-     </property>
      <item>
       <property name="text">
        <string>비밀번호 변경</string>
@@ -29,12 +26,17 @@
        <string>회원탈퇴</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>로그아웃</string>
+      </property>
+     </item>
     </widget>
    </item>
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="passwordPage">
       <layout class="QVBoxLayout" name="passwordLayout">
@@ -48,7 +50,7 @@
        <item>
         <widget class="QLineEdit" name="currentPasswordLineEdit">
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::EchoMode::Password</enum>
          </property>
         </widget>
        </item>
@@ -62,7 +64,7 @@
        <item>
         <widget class="QLineEdit" name="newPasswordLineEdit">
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::EchoMode::Password</enum>
          </property>
         </widget>
        </item>
@@ -76,7 +78,7 @@
        <item>
         <widget class="QLineEdit" name="confirmPasswordLineEdit">
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::EchoMode::Password</enum>
          </property>
         </widget>
        </item>
@@ -101,7 +103,13 @@
        <item>
         <spacer name="passwordSpacer">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
          </property>
         </spacer>
        </item>
@@ -112,7 +120,13 @@
        <item>
         <spacer name="deleteTopSpacer">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
          </property>
         </spacer>
        </item>
@@ -122,7 +136,7 @@
           <string>회원탈퇴 하시겠습니까?</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -147,9 +161,77 @@
        <item>
         <spacer name="deleteBottomSpacer">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
          </property>
         </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="LogoutPage">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="LogoutVLayout">
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>로그아웃 하시겠습니까?</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="LogoutHLayout">
+           <item>
+            <widget class="QPushButton" name="LogoutButton">
+             <property name="text">
+              <string>로그아웃</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CancelButton">
+             <property name="text">
+              <string>취소</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>

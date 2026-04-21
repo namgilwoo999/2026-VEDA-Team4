@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
             this, SLOT(OnSignupCompleted()));         // 가입 완료 → 로그인 화면
     connect(m_signupWidget, SIGNAL(CancelRequested()),
             this, SLOT(OnSignUpCancelled()));         // 취소 → 로그인 화면
+    connect(m_shopWidget, SIGNAL(LogoutRequested()), this, SLOT(OnLogoutRequested()));
 }
 
 MainWindow::~MainWindow() {
@@ -55,3 +56,7 @@ void MainWindow::OnSignUpCancelled()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+void MainWindow::OnLogoutRequested()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}

@@ -26,6 +26,7 @@ private slots:
     void OnSignUpRequested();
     void OnSignupCompleted();
     void OnSignUpCancelled();
+    void OnLogoutRequested();
 
 private:
     Ui::MainWindow *ui;

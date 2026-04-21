@@ -18,6 +18,7 @@ public:
 
 signals:
     void AccountDeleted();
+    void LogoutRequested();
 
 private slots:
     void OnMenuItemClicked(int row);
@@ -25,6 +26,7 @@ private slots:
     void OnConfirmDeleteClicked();
     void OnCancelPasswordClicked();
     void OnCancelDeleteClicked();
+    void OnLogoutClicked();
 
 private:
     Ui::Mypage *ui;

@@ -1,0 +1,25 @@
+[
+  { "name": "프리미엄 사과 주스 세트", "category": "식품", "price": 12000, "quantity": 12 },
+  { "name": "애플 시나몬 시리얼", "category": "식품", "price": 6800, "quantity": 22 },
+  { "name": "사과맛 에너지바", "category": "식품", "price": 2500, "quantity": 60 },
+  { "name": "유기농 애플 식초", "category": "식품", "price": 9000, "quantity": 18 },
+  { "name": "사과 토핑 요거트", "category": "식품", "price": 3000, "quantity": 35 },
+
+  { "name": "프리미엄 애플 로고 셔츠", "category": "패션", "price": 42000, "quantity": 20 },
+  { "name": "사과 자수 데님 자켓", "category": "패션", "price": 67000, "quantity": 10 },
+  { "name": "애플 컬러 스니커즈", "category": "패션", "price": 59000, "quantity": 28 },
+  { "name": "주방 컨셉 앞치마 패션", "category": "패션", "price": 15000, "quantity": 45 },
+  { "name": "사과 그래픽 에코백", "category": "패션", "price": 12000, "quantity": 33 },
+
+  { "name": "애플 스마트 워치", "category": "전자제품", "price": 350000, "quantity": 7 },
+  { "name": "스마트 주방 타이머", "category": "전자제품", "price": 15000, "quantity": 25 },
+  { "name": "프리미엄 애플 노트북", "category": "전자제품", "price": 1500000, "quantity": 3 },
+  { "name": "사과 디자인 블루투스 스피커", "category": "전자제품", "price": 47000, "quantity": 14 },
+  { "name": "주방용 스마트 공기청정기", "category": "전자제품", "price": 210000, "quantity": 9 },
+
+  { "name": "프리미엄 주방 냄비 세트", "category": "주방용품", "price": 130000, "quantity": 6 },
+  { "name": "사과 모양 컵 세트", "category": "주방용품", "price": 18000, "quantity": 40 },
+  { "name": "스마트 주방 온도계", "category": "주방용품", "price": 22000, "quantity": 19 },
+  { "name": "애플 패턴 식탁보", "category": "주방용품", "price": 27000, "quantity": 16 },
+  { "name": "다용도 주방 정리 수납함", "category": "주방용품", "price": 34000, "quantity": 21 }
+]

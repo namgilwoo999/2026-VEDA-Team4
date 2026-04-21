@@ -9,11 +9,12 @@ Mypage::Mypage(const QString &username, QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->menuListWidget,       SIGNAL(currentRowChanged(int)), this, SLOT(OnMenuItemClicked(int)));
+    connect(ui->menuListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(OnMenuItemClicked(int)));
     connect(ui->changePasswordButton, SIGNAL(clicked()), this, SLOT(OnChangePasswordClicked()));
     connect(ui->cancelPasswordButton, SIGNAL(clicked()), this, SLOT(OnCancelPasswordClicked()));
     connect(ui->confirmDeleteButton,  SIGNAL(clicked()), this, SLOT(OnConfirmDeleteClicked()));
     connect(ui->cancelDeleteButton,   SIGNAL(clicked()), this, SLOT(OnCancelDeleteClicked()));
-
+    connect(ui->LogoutButton, SIGNAL(clicked()), this, SLOT(OnLogoutClicked()));
     ui->menuListWidget->setCurrentRow(0);
 }
 
@@ -78,4 +79,11 @@ void Mypage::OnCancelPasswordClicked() {
 
 void Mypage::OnCancelDeleteClicked() {
     ui->menuListWidget->setCurrentRow(0);
+}
+
+void Mypage::OnLogoutClicked()
+{
+    QMessageBox::information(this, "로그아웃", "로그아웃 되었습니다.");
+    emit LogoutRequested();
+    this->close();
 }
