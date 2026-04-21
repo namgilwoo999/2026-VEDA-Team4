@@ -26,8 +26,3 @@ void LoginWidget::OnLoginClicked()
 {
     emit LoginRequested(ui->idLineEdit->text(), ui->passwordLineEdit->text());
 }
-
-void LoginWidget::OnCancelClicked()
-{
-    emit CancelRequested();
-}

@@ -9,7 +9,6 @@ Mypage::Mypage(const QString &username, QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->menuListWidget,       SIGNAL(currentRowChanged(int)), this, SLOT(OnMenuItemClicked(int)));
-    connect(ui->menuListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(OnMenuItemClicked(int)));
     connect(ui->changePasswordButton, SIGNAL(clicked()), this, SLOT(OnChangePasswordClicked()));
     connect(ui->cancelPasswordButton, SIGNAL(clicked()), this, SLOT(OnCancelPasswordClicked()));
     connect(ui->confirmDeleteButton,  SIGNAL(clicked()), this, SLOT(OnConfirmDeleteClicked()));
