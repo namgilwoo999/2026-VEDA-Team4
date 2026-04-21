@@ -38,6 +38,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(CustomerManagementSystem
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        mypage.h mypage.cpp mypage.ui
     )
 else()
     if(ANDROID)

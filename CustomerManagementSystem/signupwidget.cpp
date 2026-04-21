@@ -5,8 +5,7 @@
 
 SignupWidget::SignupWidget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::SignupWidget)
-{
+    , ui(new Ui::SignupWidget) {
     ui->setupUi(this);
 
     connect(ui->checkIdButton, SIGNAL(clicked()), this, SLOT(OnCheckIdClicked()));
@@ -14,13 +13,11 @@ SignupWidget::SignupWidget(QWidget *parent)
     connect(ui->cancelButton,  SIGNAL(clicked()), this, SLOT(OnCancelClicked()));
 }
 
-SignupWidget::~SignupWidget()
-{
+SignupWidget::~SignupWidget() {
     delete ui;
 }
 
-void SignupWidget::OnCheckIdClicked()
-{
+void SignupWidget::OnCheckIdClicked() {
     QString id = ui->idLineEdit->text().trimmed();
     if (id.isEmpty()) {
         QMessageBox::warning(this, "알림", "아이디를 입력해주세요.");
@@ -38,8 +35,7 @@ void SignupWidget::OnCheckIdClicked()
     }
 }
 
-void SignupWidget::OnConfirmClicked()
-{
+void SignupWidget::OnConfirmClicked() {
     if (!m_idChecked) {
         QMessageBox::warning(this, "알림", "아이디 중복 확인을 해주세요.");
         return;
@@ -70,7 +66,6 @@ void SignupWidget::OnConfirmClicked()
     }
 }
 
-void SignupWidget::OnCancelClicked()
-{
+void SignupWidget::OnCancelClicked() {
     emit CancelRequested();
 }
