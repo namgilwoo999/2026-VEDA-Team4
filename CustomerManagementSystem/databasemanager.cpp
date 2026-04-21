@@ -1,8 +1,10 @@
 #include "databasemanager.h"
+#include <QDir>
 
 DatabaseManager::DatabaseManager() {
 }
 void DatabaseManager::Init() {
+    QDir().mkpath("data");
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("data/mydatabase.db");
 
