@@ -9,7 +9,7 @@ LoginWidget::LoginWidget(QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->loginButton,  SIGNAL(clicked()), this, SLOT(OnLoginClicked()));
-    connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(OnCancelClicked()));
+    connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(close()));
     connect(ui->signupButton, SIGNAL(clicked()), this, SLOT(OnSignupClicked()));
 
     connect(m_signup, SIGNAL(CancelRequested()), m_signup, SLOT(hide()));
