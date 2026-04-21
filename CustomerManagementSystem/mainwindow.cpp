@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "mypage.h"
 #include "shopwidget.h"
 #include "./ui_mainwindow.h"
 #include <QMessageBox>

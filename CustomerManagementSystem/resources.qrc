@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/logo-ko.svg</file>
+        <file>resources/VEDALOG.png</file>
+    </qresource>
+</RCC>
