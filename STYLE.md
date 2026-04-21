@@ -49,7 +49,8 @@ bool IsNewHighScore(int new_score) {
 
 ## 식별자 명명 규칙 (Identifier Naming Conventions)
 
-- **변수 & 함수**: `PascalCase` 사용 (예: `UserManager`)
+- **변수**: `camelCase` 사용 (예: `firstName`)
+- **함수**: `PascalCase` 사용 (예: `UserManager`)
 - **상수**: `UPPER_CASE` 사용 (예: `MAX_RETRIES`)
 - **클래스**: `PascalCase` 사용 (예: `UserManager`)
 ```
