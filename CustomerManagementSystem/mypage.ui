@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mypage</class>
+ <widget class="QDialog" name="Mypage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>마이페이지</string>
+  </property>
+  <layout class="QHBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QListWidget" name="menuListWidget">
+     <property name="maximumWidth">
+      <number>150</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>비밀번호 변경</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>회원탈퇴</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="passwordPage">
+      <layout class="QVBoxLayout" name="passwordLayout">
+       <item>
+        <widget class="QLabel" name="currentPasswordLabel">
+         <property name="text">
+          <string>현재 비밀번호</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="currentPasswordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="newPasswordLabel">
+         <property name="text">
+          <string>새로운 비밀번호</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="newPasswordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="confirmPasswordLabel">
+         <property name="text">
+          <string>새로운 비밀번호 확인</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="confirmPasswordLineEdit">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="passwordButtonLayout">
+         <item>
+          <widget class="QPushButton" name="changePasswordButton">
+           <property name="text">
+            <string>변경하기</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cancelPasswordButton">
+           <property name="text">
+            <string>취소</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="passwordSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="deleteAccountPage">
+      <layout class="QVBoxLayout" name="deleteLayout">
+       <item>
+        <spacer name="deleteTopSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="deleteLabel">
+         <property name="text">
+          <string>회원탈퇴 하시겠습니까?</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="deleteButtonLayout">
+         <item>
+          <widget class="QPushButton" name="confirmDeleteButton">
+           <property name="text">
+            <string>탈퇴하기</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cancelDeleteButton">
+           <property name="text">
+            <string>취소</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="deleteBottomSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

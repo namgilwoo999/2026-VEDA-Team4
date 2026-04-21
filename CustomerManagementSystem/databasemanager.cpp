@@ -1,4 +1,5 @@
 #include "databasemanager.h"
+#include <QDir>
 
 DatabaseManager::DatabaseManager() {}
 

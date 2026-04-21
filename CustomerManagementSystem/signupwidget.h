@@ -2,6 +2,7 @@
 #define SIGNUPWIDGET_H
 
 #include <QWidget>
+#include "userdb.h"
 
 namespace Ui {
 class SignupWidget;
@@ -16,11 +17,7 @@ public:
     ~SignupWidget();
 
 signals:
-    void SignupRequested(const QString &id, const QString &password,
-                         const QString &name, const QString &birth,
-                         const QString &phone, bool phoneAlarm,
-                         const QString &email, bool emailAlarm);
-    void CheckIdRequested(const QString &id);
+    void SignupCompleted();
     void CancelRequested();
 
 private slots:
@@ -30,6 +27,8 @@ private slots:
 
 private:
     Ui::SignupWidget *ui;
+    UserDB m_userDb;
+    bool m_idChecked = false;
 };
 
 #endif // SIGNUPWIDGET_H
