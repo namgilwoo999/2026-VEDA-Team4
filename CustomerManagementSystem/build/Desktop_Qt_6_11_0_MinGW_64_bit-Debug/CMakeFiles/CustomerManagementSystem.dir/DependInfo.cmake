@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "CustomerManagementSystem_autogen/timestamp" "custom" "CustomerManagementSystem_autogen/deps"
   "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CustomerManagementSystem_autogen/mocs_compilation.cpp" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/databasemanager.cpp" "CMakeFiles/CustomerManagementSystem.dir/databasemanager.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/databasemanager.cpp.obj.d"
   "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/item.cpp" "CMakeFiles/CustomerManagementSystem.dir/item.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/item.cpp.obj.d"
   "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/main.cpp" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/main.cpp.obj.d"
   "C:/Users/3-02/Desktop/CustomerManagement/CustomerManagementSystem/mainwindow.cpp" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/CustomerManagementSystem.dir/mainwindow.cpp.obj.d"

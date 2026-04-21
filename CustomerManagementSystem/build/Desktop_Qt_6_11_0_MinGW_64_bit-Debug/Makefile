@@ -223,6 +223,30 @@ CustomerManagementSystem_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/CustomerManagementSystem_autogen/mocs_compilation.cpp.s
 .PHONY : CustomerManagementSystem_autogen/mocs_compilation.cpp.s
 
+databasemanager.obj: databasemanager.cpp.obj
+.PHONY : databasemanager.obj
+
+# target to build an object file
+databasemanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/databasemanager.cpp.obj
+.PHONY : databasemanager.cpp.obj
+
+databasemanager.i: databasemanager.cpp.i
+.PHONY : databasemanager.i
+
+# target to preprocess a source file
+databasemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/databasemanager.cpp.i
+.PHONY : databasemanager.cpp.i
+
+databasemanager.s: databasemanager.cpp.s
+.PHONY : databasemanager.s
+
+# target to generate assembly for a file
+databasemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomerManagementSystem.dir\build.make CMakeFiles/CustomerManagementSystem.dir/databasemanager.cpp.s
+.PHONY : databasemanager.cpp.s
+
 item.obj: item.cpp.obj
 .PHONY : item.obj
 
@@ -337,6 +361,9 @@ help:
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.obj
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.i
 	@echo ... CustomerManagementSystem_autogen/mocs_compilation.s
+	@echo ... databasemanager.obj
+	@echo ... databasemanager.i
+	@echo ... databasemanager.s
 	@echo ... item.obj
 	@echo ... item.i
 	@echo ... item.s
