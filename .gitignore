@@ -39,7 +39,7 @@
 
 # debug information files
 *.dwo
-
+CustomerManagementSystem/build/
 build/
 *.log
 *.idx

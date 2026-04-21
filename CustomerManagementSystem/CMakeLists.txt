@@ -27,6 +27,10 @@ set(PROJECT_SOURCES
 
         databasemanager.cpp
         databasemanager.h
+
+        loginwidget.h loginwidget.cpp loginwidget.ui
+        signupwidget.h signupwidget.cpp signupwidget.ui
+        user.h user.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
