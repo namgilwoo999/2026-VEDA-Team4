@@ -35,6 +35,9 @@
        <property name="text">
         <string>제품 삭제</string>
        </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonStyle::ToolButtonFollowStyle</enum>
+       </property>
       </widget>
      </item>
      <item>
@@ -50,10 +53,10 @@
         <string>프로필</string>
        </property>
        <property name="popupMode">
-        <enum>QToolButton::ToolButtonPopupMode::MenuButtonPopup</enum>
+        <enum>QToolButton::ToolButtonPopupMode::DelayedPopup</enum>
        </property>
        <property name="toolButtonStyle">
-        <enum>Qt::ToolButtonStyle::ToolButtonTextOnly</enum>
+        <enum>Qt::ToolButtonStyle::ToolButtonFollowStyle</enum>
        </property>
       </widget>
      </item>
