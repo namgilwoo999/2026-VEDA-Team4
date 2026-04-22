@@ -58,6 +58,9 @@ private slots:
     /** @brief 로그아웃 버튼 클릭 슬롯. */
     void OnLogoutClicked();
 
+    /** @brief 로그아웃 취소 버튼 클릭 슬롯. */
+    void OnCancelLogoutClicked();
+
 private:
     Ui::Mypage *ui;      ///< Qt Designer 생성 UI 포인터
     UserDB      m_userDb;    ///< 사용자 DB 접근 객체
