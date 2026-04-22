@@ -1,0 +1,87 @@
+* 6f4bcfa 기획서 및 보고서 추가
+*   2a7e7f4 Merge branch 'main' of https://github.com/xowjd0928/2026-VEDA-Team4
+|\  
+| * e9ed1b6 Change project title to 'VEDA Market System'
+| * 3776acc Remove orders table from README
+* | 6e97d8f File Name Changed
+|/  
+*   2fc0b8c Merge pull request #7 from namgilwoo999/main
+|\  
+| * a50a337 loginwidget Ui Updated
+| * 78bc18d mypage fixed]
+| * 10ea30d README Updated
+* | 5a92e4a qss and code style changed
+|/  
+*   8ea538e Merge pull request #6 from namgilwoo999/main
+|\  
+| * e60ab01 comment update
+* | a1261b4 Comment Added
+* | 1c705ed Profile Button Style Changed
+|/  
+*   c5fd844 Merge pull request #5 from namgilwoo999/main
+|\  
+| * 1fdd122 bug fix
+| * 659ef90 fix: resolve login bug and correct typos
+| * 5d6f617 feat: login cancelbtn fix
+| * 89faef4 login fixed
+| * 4d7fb90 login fixed
+|/  
+| * db79ef9 WIP on main: a9ed8eb Logout Function Added
+|/| 
+| * 3e2871a index on main: a9ed8eb Logout Function Added
+|/  
+* a9ed8eb Logout Function Added
+* 5762a34 All Functions Completed
+*   d5f9e9c Merge pull request #2 from namgilwoo999/feature/user
+|\  
+| *   6efac75 Merge branch 'main' into feature/user
+| |\  
+| |/  
+|/|   
+* | e953bb2 ShopWidget Completed
+* |   a48f1e7 Merge pull request #1 from namgilwoo999/feature/user
+|\ \  
+| | * 178f8d5 feat: implement MainWindow
+| | * 80231b3 feat: implement mypage UI and logic
+| | * cd1f3a0 userDb connect
+| |/  
+| *   70271b0 Merge remote-tracking branch 'upstream/main' into feature/user
+| |\  
+| |/  
+|/|   
+* |   51dcf85 merge dbmanager and resolve conflicts
+|\ \  
+| * | c12f789 Database Manager Added
+* | | eba6be5 remove build files and resolve merge
+|\| | 
+| * | 170a1ed variabled name changed along with style guide
+| * | 684c1f3 Item Class Added
+| * | 8f716bb Branch ItemClass Added
+| | *   ead5a78 Merge branch 'main' into feature/user
+| | |\  
+| |_|/  
+|/| |   
+* | |   cfc3620 resolve merge conflict in ShopWidget UI
+|\ \ \  
+| * | | 31f0989 ShopWidget UI Added
+| | | *   da85e5b git merge branch
+| | | |\  
+| |_|_|/  
+|/| | |   
+* | | | 088dab7 Style guide updated
+| |/ /  
+|/| |   
+| | * 8b8be88 UserClass add
+| | * 8948ea7 Add SignupWidget and connect from LoginWidget signup button
+| | * ada517c feat: Add LoginWidget with ID/password input and login/cancel/signup buttons
+| |/  
+|/|   
+* | a51ad7f Style guideline moved
+* | 903173d Style guide added
+* | e3086e1 ERD Updated
+* | 3490928 ERD Added
+|/  
+* cd7526c MainWindow Added
+* 7d651dd Outline added to README
+* 0de18b6 Initial commit
+* 704508d Outline Added
