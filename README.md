@@ -1,4 +1,4 @@
-# 2026-VEDA-Team4 — Customer Management System
+# 2026-VEDA-Team4 — VEDA Market System
 
 Qt6 기반 판매자 관리 데스크톱 애플리케이션입니다.  
 회원가입 / 로그인 / 상품 관리 / 마이페이지 기능을 제공합니다.
