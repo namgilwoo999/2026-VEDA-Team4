@@ -84,7 +84,6 @@ cmake --build build
 ```sql
 users  (id, username, password, name, birthdate, phone, email, created_at)
 items  (id, name, category, price, quantity)
-orders (id, user_id, item_id, quantity, created_at)
 ```
 
 ---
