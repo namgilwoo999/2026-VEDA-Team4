@@ -1,6 +1,4 @@
 #include "mainwindow.h"
-#include "mypage.h"
-#include "shopwidget.h"
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
 
@@ -12,20 +10,23 @@ MainWindow::MainWindow(QWidget *parent)
     , m_signupWidget(new SignupWidget(this)) {
     ui->setupUi(this);
 
-    ui->stackedWidget->addWidget(m_loginWidget);  // index 0
-    ui->stackedWidget->addWidget(m_shopWidget);   // index 1
-    ui->stackedWidget->addWidget(m_signupWidget); // index 2
+    // 스택 위젯에 화면 순서대로 추가 index 0=로그인, 1=쇼핑, 2=회원가입
+    ui->stackedWidget->addWidget(m_loginWidget);
+    ui->stackedWidget->addWidget(m_shopWidget);
+    ui->stackedWidget->addWidget(m_signupWidget);
     ui->stackedWidget->setCurrentIndex(0);
 
+    // 화면 전환 신호 연결
     connect(m_loginWidget, SIGNAL(LoginRequested(QString, QString)),
             this, SLOT(OnLoginRequested(QString, QString)));
     connect(m_loginWidget, SIGNAL(SignUpRequested()),
             this, SLOT(OnSignUpRequested()));
     connect(m_signupWidget, SIGNAL(SignupCompleted()),
-            this, SLOT(OnSignupCompleted()));         // 가입 완료 → 로그인 화면
+            this, SLOT(OnSignupCompleted()));
     connect(m_signupWidget, SIGNAL(CancelRequested()),
-            this, SLOT(OnSignUpCancelled()));         // 취소 → 로그인 화면
-    connect(m_shopWidget, SIGNAL(LogoutRequested()), this, SLOT(OnLogoutRequested()));
+            this, SLOT(OnSignUpCancelled()));
+    connect(m_shopWidget, SIGNAL(LogoutRequested()),
+            this, SLOT(OnLogoutRequested()));
 }
 
 MainWindow::~MainWindow() {
@@ -33,6 +34,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::OnLoginRequested(const QString &id, const QString &password) {
+    // 자격 증명 검증 후 성공 시 쇼핑 화면으로 전환, 실패 시 경고 표시
     if (m_userDb.VerifyPassword(id, password)) {
         m_shopWidget->setUsername(id);
         ui->stackedWidget->setCurrentIndex(1);
@@ -41,22 +43,18 @@ void MainWindow::OnLoginRequested(const QString &id, const QString &password) {
     }
 }
 
-void MainWindow::OnSignUpRequested()
-{
+void MainWindow::OnSignUpRequested() {
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void MainWindow::OnSignupCompleted()
-{
+void MainWindow::OnSignupCompleted() {
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-void MainWindow::OnSignUpCancelled()
-{
+void MainWindow::OnSignUpCancelled() {
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-void MainWindow::OnLogoutRequested()
-{
+void MainWindow::OnLogoutRequested() {
     ui->stackedWidget->setCurrentIndex(0);
 }
