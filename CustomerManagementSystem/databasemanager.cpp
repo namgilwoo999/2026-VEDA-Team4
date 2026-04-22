@@ -3,10 +3,9 @@
 
 DatabaseManager::DatabaseManager() {}
 
-void DatabaseManager::Init()
-{
+void DatabaseManager::Init() {
+    // 디렉토리 생성 및 데이터베이스 연결
     QDir().mkpath("data");
-
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE","main_connection");
     db.setDatabaseName("data/mydatabase.db");
     if (!db.open()) {
@@ -14,13 +13,22 @@ void DatabaseManager::Init()
         return;
     }
 
+    // 테이블 생성
     CreateTables();
 }
 
-void DatabaseManager::CreateTables()
-{
+void DatabaseManager::CreateTables() {
     QSqlQuery query(QSqlDatabase::database("main_connection"));
 
+    // users 테이블 생성
+    // - id       : 기본키
+    // - username : 로그인에 사용할 아이디
+    // - password : 비밀번호
+    // - name     : 사용자 이름
+    // - birthdate: 생년월일
+    // - phone    : 연락처
+    // - email    : 이메일
+    // - created_at: 계정 생성 시각
     query.exec(
         "CREATE TABLE IF NOT EXISTS users ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -34,26 +42,19 @@ void DatabaseManager::CreateTables()
         ")"
         );
 
+    // items 테이블 생성
+    // - id        : 기본키
+    // - name      : 상품명
+    // - category  : 상품 카테고리
+    // - price     : 가격
+    // - quantity  : 재고 수량
     query.exec(
         "CREATE TABLE IF NOT EXISTS items ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT, "
         "name TEXT NOT NULL, "
         "category TEXT, "
         "price INTEGER, "
-        "image_path TEXT, "
         "quantity INTEGER"
-        ")"
-        );
-
-    query.exec(
-        "CREATE TABLE IF NOT EXISTS orders ("
-        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-        "user_id INTEGER NOT NULL, "
-        "item_id INTEGER NOT NULL, "
-        "quantity INTEGER, "
-        "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, "
-        "FOREIGN KEY(user_id) REFERENCES users(id), "
-        "FOREIGN KEY(item_id) REFERENCES items(id)"
         ")"
         );
 }
