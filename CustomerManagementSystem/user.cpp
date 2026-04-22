@@ -13,7 +13,6 @@ User::User(const QString &id, const QString &password,
     , m_email(email)
     , m_emailAlarm(emailAlarm)
 {
-
 }
 
 QString User::GetId() const {

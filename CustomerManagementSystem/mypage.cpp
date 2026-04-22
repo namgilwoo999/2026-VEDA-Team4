@@ -8,12 +8,15 @@ Mypage::Mypage(const QString &username, QWidget *parent)
     , m_username(username) {
     ui->setupUi(this);
 
+    // 메뉴 및 버튼 신호 연결
     connect(ui->menuListWidget,       SIGNAL(currentRowChanged(int)), this, SLOT(OnMenuItemClicked(int)));
     connect(ui->changePasswordButton, SIGNAL(clicked()), this, SLOT(OnChangePasswordClicked()));
     connect(ui->cancelPasswordButton, SIGNAL(clicked()), this, SLOT(OnCancelPasswordClicked()));
     connect(ui->confirmDeleteButton,  SIGNAL(clicked()), this, SLOT(OnConfirmDeleteClicked()));
     connect(ui->cancelDeleteButton,   SIGNAL(clicked()), this, SLOT(OnCancelDeleteClicked()));
-    connect(ui->LogoutButton, SIGNAL(clicked()), this, SLOT(OnLogoutClicked()));
+    connect(ui->LogoutButton,         SIGNAL(clicked()), this, SLOT(OnLogoutClicked()));
+
+    // 첫 번째 메뉴 항목(비밀번호 변경) 기본 선택
     ui->menuListWidget->setCurrentRow(0);
 }
 
@@ -22,6 +25,7 @@ Mypage::~Mypage() {
 }
 
 void Mypage::OnMenuItemClicked(int row) {
+    // 선택된 메뉴 행 인덱스와 동일한 스택 페이지로 전환
     ui->stackedWidget->setCurrentIndex(row);
 }
 
@@ -30,11 +34,13 @@ void Mypage::OnChangePasswordClicked() {
     QString newPw     = ui->newPasswordLineEdit->text();
     QString confirmPw = ui->confirmPasswordLineEdit->text();
 
+    // 빈 항목 검사
     if (currentPw.isEmpty() || newPw.isEmpty() || confirmPw.isEmpty()) {
         QMessageBox::warning(this, "알림", "모든 항목을 입력해주세요.");
         return;
     }
 
+    // 현재 비밀번호 일치 여부 확인
     if (!m_userDb.VerifyPassword(m_username, currentPw)) {
         QMessageBox::warning(this, "오류", "현재 비밀번호가 일치하지 않습니다.");
         ui->currentPasswordLineEdit->clear();
@@ -42,6 +48,7 @@ void Mypage::OnChangePasswordClicked() {
         return;
     }
 
+    // 새 비밀번호와 확인란 일치 여부 검사
     if (newPw != confirmPw) {
         QMessageBox::warning(this, "오류", "새로운 비밀번호가 일치하지 않습니다.");
         ui->newPasswordLineEdit->clear();
@@ -50,6 +57,7 @@ void Mypage::OnChangePasswordClicked() {
         return;
     }
 
+    // DB 업데이트 후 입력 필드 초기화
     if (m_userDb.UpdatePassword(m_username, newPw)) {
         QMessageBox::information(this, "알림", "비밀번호가 변경되었습니다.");
         ui->currentPasswordLineEdit->clear();
@@ -61,6 +69,7 @@ void Mypage::OnChangePasswordClicked() {
 }
 
 void Mypage::OnConfirmDeleteClicked() {
+    // 실수 방지를 위한 이중 확인 (기본 선택: No)
     QMessageBox::StandardButton reply = QMessageBox::warning(
         this, "회원탈퇴 확인",
         "정말로 탈퇴하시겠습니까?\n탈퇴 후에는 복구할 수 없습니다.",
@@ -68,9 +77,11 @@ void Mypage::OnConfirmDeleteClicked() {
         QMessageBox::No
     );
 
-    if (reply != QMessageBox::Yes)
+    if (reply != QMessageBox::Yes) {
         return;
+    }
 
+    // 탈퇴 처리 후 신호 발생으로 로그인 화면 복귀
     if (m_userDb.DeleteUser(m_username)) {
         QMessageBox::information(this, "알림", "회원탈퇴가 완료되었습니다.");
         emit AccountDeleted();
@@ -81,17 +92,18 @@ void Mypage::OnConfirmDeleteClicked() {
 }
 
 void Mypage::OnCancelPasswordClicked() {
+    // 비밀번호 변경 입력 필드 전체 초기화
     ui->currentPasswordLineEdit->clear();
     ui->newPasswordLineEdit->clear();
     ui->confirmPasswordLineEdit->clear();
 }
 
 void Mypage::OnCancelDeleteClicked() {
+    // 첫 번째 메뉴(비밀번호 변경)로 복귀
     ui->menuListWidget->setCurrentRow(0);
 }
 
-void Mypage::OnLogoutClicked()
-{
+void Mypage::OnLogoutClicked() {
     QMessageBox::information(this, "로그아웃", "로그아웃 되었습니다.");
     emit LogoutRequested();
     this->close();

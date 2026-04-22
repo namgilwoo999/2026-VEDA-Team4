@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>마이페이지</string>
+   <string>프로필</string>
   </property>
   <layout class="QHBoxLayout" name="mainLayout">
    <item>
