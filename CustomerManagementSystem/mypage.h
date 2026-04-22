@@ -14,8 +14,7 @@ class Mypage;
  * 비밀번호 변경, 회원탈퇴, 로그아웃 기능을 제공한다.
  * 메뉴 목록 선택에 따라 내부 스택 위젯이 전환된다.
  */
-class Mypage : public QDialog
-{
+class Mypage : public QDialog {
     Q_OBJECT
 
 public:

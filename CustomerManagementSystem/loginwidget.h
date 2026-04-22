@@ -13,8 +13,7 @@ class LoginWidget;
  * 아이디/비밀번호 입력 후 로그인 또는 회원가입 화면으로
  * 전환하는 신호를 발생시킨다.
  */
-class LoginWidget : public QWidget
-{
+class LoginWidget : public QWidget {
     Q_OBJECT
 
 public:

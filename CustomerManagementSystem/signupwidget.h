@@ -14,8 +14,7 @@ class SignupWidget;
  * 아이디 중복 확인 후 사용자 정보를 입력받아 DB에 등록한다.
  * 가입 완료 또는 취소 시 신호를 발생시켜 로그인 화면으로 전환한다.
  */
-class SignupWidget : public QWidget
-{
+class SignupWidget : public QWidget  {
     Q_OBJECT
 
 public:

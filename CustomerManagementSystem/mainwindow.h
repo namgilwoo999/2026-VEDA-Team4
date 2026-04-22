@@ -19,8 +19,7 @@ QT_END_NAMESPACE
  * QStackedWidget을 통해 로그인(0), 쇼핑(1), 회원가입(2) 화면을 전환한다.
  * 각 화면 간 신호를 중계하고 로그인 인증을 담당한다.
  */
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:

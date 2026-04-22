@@ -34,7 +34,9 @@ QPushButton:disabled, QToolButton:disabled {
 
 /* ── 취소/삭제 버튼 (objectName 기준) ── */
 QPushButton#cancelButton, QPushButton#Cancel,
-QPushButton#CancelButton, QToolButton#DeleteButton {
+QPushButton#CancelButton, QToolButton#DeleteButton,
+QPushButton#cancelPasswordButton, QPushButton#CancelButton,
+QPushButton#cancelDeleteButton {
     background-color: #e74c3c;
 }
 QPushButton#cancelButton:hover, QPushButton#Cancel:hover,

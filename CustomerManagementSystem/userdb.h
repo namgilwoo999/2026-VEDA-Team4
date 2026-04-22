@@ -10,8 +10,7 @@
  * DatabaseManager::Init() 호출 이후 사용해야 한다.
  * 모든 메서드는 "main_connection" 이름의 QSqlDatabase 연결을 사용한다.
  */
-class UserDB
-{
+class UserDB {
 public:
     UserDB() = default;
 
