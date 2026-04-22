@@ -8,7 +8,7 @@ LoginWidget::LoginWidget(QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->loginButton,  SIGNAL(clicked()), this, SLOT(OnLoginClicked()));
-    connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+    connect(ui->cancelButton, SIGNAL(clicked()), qApp, SLOT(quit()));
     connect(ui->signupButton, SIGNAL(clicked()), this, SLOT(OnSignUpClicked()));
 }
 
@@ -25,9 +25,8 @@ void LoginWidget::OnSignUpClicked()
 void LoginWidget::OnLoginClicked()
 {
     emit LoginRequested(ui->idLineEdit->text(), ui->passwordLineEdit->text());
-}
 
-void LoginWidget::OnCancelClicked()
-{
-    emit CancelRequested();
+    ui->idLineEdit->clear();
+    ui->passwordLineEdit->clear();
+
 }

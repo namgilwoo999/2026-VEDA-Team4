@@ -7,7 +7,7 @@ void DatabaseManager::Init()
 {
     QDir().mkpath("data");
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE","main_connection");
     db.setDatabaseName("data/mydatabase.db");
     if (!db.open()) {
         qDebug() << "DB Open Error:" << db.lastError().text();

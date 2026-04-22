@@ -17,12 +17,10 @@ public:
 
 signals:
     void LoginRequested(const QString &id, const QString &password);
-    void CancelRequested();
     void SignUpRequested();
 
 private slots:
     void OnLoginClicked();
-    void OnCancelClicked();
     void OnSignUpClicked();
 
 private:

@@ -44,8 +44,28 @@ void ItemModifyDialog::onModifyButton()
         QMessageBox::warning(this, "경고", "가격을 입력해주세요.");
         return;
     }
+    bool priceCheck;
+    int price = ui->PriceEdit->text().trimmed().toInt(&priceCheck);
+    if (!priceCheck) {
+        QMessageBox::warning(this, "경고", "가격은 숫자만 입력해주세요.");
+        return;
+    }
+    if (price < 0) {
+        QMessageBox::warning(this, "경고", "가격은 0 이상이어야 합니다.");
+        return;
+    }
     if (ui->QuantityEdit->text().trimmed().isEmpty()) {
         QMessageBox::warning(this, "경고", "수량을 입력해주세요.");
+        return;
+    }
+    bool quantityCheck;
+    int quantity = ui->QuantityEdit->text().trimmed().toInt(&quantityCheck);
+    if (!quantityCheck) {
+        QMessageBox::warning(this, "경고", "수량은 숫자만 입력해주세요.");
+        return;
+    }
+    if (quantity < 0) {
+        QMessageBox::warning(this, "경고", "수량은 0 이상이어야 합니다.");
         return;
     }
 

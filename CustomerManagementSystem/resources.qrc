@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>style.qss</file>
-        <file>VEDA.png</file>
         <file>items.json</file>
+        <file>vedalogo.png</file>
     </qresource>
 </RCC>
