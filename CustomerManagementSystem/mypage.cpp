@@ -14,7 +14,8 @@ Mypage::Mypage(const QString &username, QWidget *parent)
     connect(ui->cancelPasswordButton, SIGNAL(clicked()), this, SLOT(OnCancelPasswordClicked()));
     connect(ui->confirmDeleteButton,  SIGNAL(clicked()), this, SLOT(OnConfirmDeleteClicked()));
     connect(ui->cancelDeleteButton,   SIGNAL(clicked()), this, SLOT(OnCancelDeleteClicked()));
-    connect(ui->LogoutButton,         SIGNAL(clicked()), this, SLOT(OnLogoutClicked()));
+    connect(ui->LogoutButton,  SIGNAL(clicked()), this, SLOT(OnLogoutClicked()));
+    connect(ui->CancelButton,  SIGNAL(clicked()), this, SLOT(OnCancelLogoutClicked()));
 
     // 첫 번째 메뉴 항목(비밀번호 변경) 기본 선택
     ui->menuListWidget->setCurrentRow(0);
@@ -92,19 +93,24 @@ void Mypage::OnConfirmDeleteClicked() {
 }
 
 void Mypage::OnCancelPasswordClicked() {
-    // 비밀번호 변경 입력 필드 전체 초기화
+    // 입력 필드 초기화 후 다이얼로그 닫기
     ui->currentPasswordLineEdit->clear();
     ui->newPasswordLineEdit->clear();
     ui->confirmPasswordLineEdit->clear();
+    reject();
 }
 
 void Mypage::OnCancelDeleteClicked() {
-    // 첫 번째 메뉴(비밀번호 변경)로 복귀
-    ui->menuListWidget->setCurrentRow(0);
+    // 다이얼로그 닫기
+    reject();
 }
 
 void Mypage::OnLogoutClicked() {
     QMessageBox::information(this, "로그아웃", "로그아웃 되었습니다.");
     emit LogoutRequested();
     this->close();
+}
+
+void Mypage::OnCancelLogoutClicked() {
+    reject();
 }
