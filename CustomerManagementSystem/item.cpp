@@ -1,7 +1,6 @@
 #include "item.h"
 
-Item::Item() {
-}
+Item::Item() : id(0), price(0), quantity(0) {}
 
 Item::Item(int id, QString name, QString category, int price, int quantity) {
     this->id = id;

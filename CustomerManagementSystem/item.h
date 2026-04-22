@@ -1,6 +1,6 @@
-#include <QString>
 #ifndef ITEM_H
 #define ITEM_H
+#include <QString>
 
 class Item {
 private:

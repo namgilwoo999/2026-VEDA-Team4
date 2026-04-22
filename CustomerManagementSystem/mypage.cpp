@@ -61,6 +61,16 @@ void Mypage::OnChangePasswordClicked() {
 }
 
 void Mypage::OnConfirmDeleteClicked() {
+    QMessageBox::StandardButton reply = QMessageBox::warning(
+        this, "회원탈퇴 확인",
+        "정말로 탈퇴하시겠습니까?\n탈퇴 후에는 복구할 수 없습니다.",
+        QMessageBox::Yes | QMessageBox::No,
+        QMessageBox::No
+    );
+
+    if (reply != QMessageBox::Yes)
+        return;
+
     if (m_userDb.DeleteUser(m_username)) {
         QMessageBox::information(this, "알림", "회원탈퇴가 완료되었습니다.");
         emit AccountDeleted();

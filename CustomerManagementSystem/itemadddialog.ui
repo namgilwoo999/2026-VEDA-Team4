@@ -15,7 +15,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout" rowstretch="10,0,0,0,0,0">
+    <layout class="QGridLayout" name="gridLayout" rowstretch="10,0,0,0,0">
      <item row="4" column="0">
       <widget class="QLabel" name="Quantity">
        <property name="text">
@@ -68,7 +68,7 @@
       <widget class="QLineEdit" name="NameEdit"/>
      </item>
      <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_3"/>
+      <widget class="QLineEdit" name="QuantityEdit"/>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="Category">

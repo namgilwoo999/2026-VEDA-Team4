@@ -11,6 +11,7 @@ SignupWidget::SignupWidget(QWidget *parent)
     connect(ui->checkIdButton, SIGNAL(clicked()), this, SLOT(OnCheckIdClicked()));
     connect(ui->confirmButton, SIGNAL(clicked()), this, SLOT(OnConfirmClicked()));
     connect(ui->cancelButton,  SIGNAL(clicked()), this, SLOT(OnCancelClicked()));
+    connect(ui->idLineEdit, &QLineEdit::textChanged, this, [this]() {m_idChecked = false;});
 }
 
 SignupWidget::~SignupWidget() {
@@ -58,6 +59,8 @@ void SignupWidget::OnConfirmClicked() {
                  email, ui->emailAlarmCheckBox->isChecked());
 
     if (m_userDb.AddUser(newUser)) {
+        ui->idLineEdit->clear();
+        ui->passwordLineEdit->clear();
         QMessageBox::information(this, "회원가입", "회원가입이 완료되었습니다.");
         emit SignupCompleted();
         this->close();

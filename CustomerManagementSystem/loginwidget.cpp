@@ -25,4 +25,8 @@ void LoginWidget::OnSignUpClicked()
 void LoginWidget::OnLoginClicked()
 {
     emit LoginRequested(ui->idLineEdit->text(), ui->passwordLineEdit->text());
+
+    ui->idLineEdit->clear();
+    ui->passwordLineEdit->clear();
+
 }
